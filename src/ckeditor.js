@@ -18,7 +18,8 @@ import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
-import ImageUploadUI from './imageuploadui';
+import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+import Base64UploadAdapter from './uploadadapter';
 
 export default class WebPlannerEditor extends ClassicEditorBase {}
 
@@ -33,10 +34,11 @@ WebPlannerEditor.builtinPlugins = [
 	ImageCaption,
 	ImageStyle,
 	ImageToolbar,
-	ImageUploadUI,
+	ImageUpload,
 	Link,
 	List,
 	Paragraph,
+	Base64UploadAdapter
 ];
 
 // Editor configuration.
