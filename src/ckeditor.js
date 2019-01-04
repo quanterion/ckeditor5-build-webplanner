@@ -20,10 +20,10 @@ import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+export default class WebPlannerEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
-ClassicEditor.builtinPlugins = [
+WebPlannerEditor.builtinPlugins = [
 	Essentials,
 	Bold,
 	Italic,
@@ -40,7 +40,7 @@ ClassicEditor.builtinPlugins = [
 ];
 
 // Editor configuration.
-ClassicEditor.defaultConfig = {
+WebPlannerEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
